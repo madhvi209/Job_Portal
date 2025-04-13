@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import Navbar from './shared/Navbar';
-import Job from './Job'; // Assuming you have a Job component
+import Job from './Job.jsx'; // Assuming you have a Job component
 import { useDispatch, useSelector } from 'react-redux';
 import useGetAllJobs from '../hooks/useGetAllJobs';
 import { setSearchQuery } from '../redux/jobSlice';
