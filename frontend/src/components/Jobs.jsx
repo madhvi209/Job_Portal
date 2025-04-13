@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './shared/Navbar';
 import FilterCard from './FilterCard';
-import Job from './job';
+import Job from './Job';
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 
@@ -10,9 +10,7 @@ const Jobs = () => {
     const [filterJobs, setFilterJobs] = useState(allJobs);
 
     useEffect(() => {
-        // Filtering jobs based on any of the applied filters or search query
         const filteredJobs = allJobs.filter((job) => {
-            // Check for searchQuery match
             const matchesSearchQuery = job.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 job.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 job.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
