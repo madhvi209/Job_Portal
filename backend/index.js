@@ -23,7 +23,7 @@ const __dirname = path.resolve();
 console.log(__dirname);
 
 const corsOptions = {
-    origin: ['http://localhost:5174'],
+    origin: process.env.URL,
     credentials: true,
 };
 
