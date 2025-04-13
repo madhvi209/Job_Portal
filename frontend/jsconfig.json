@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src", // Set the base directory for resolving non-relative modules
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ] // Alias '@' to './src'
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": [
+        "node_modules"
+    ] // Exclude node_modules from being compiled
+}
