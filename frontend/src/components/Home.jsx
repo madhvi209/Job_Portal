@@ -18,7 +18,7 @@ const Home = () => {
     }
   }, []);
   return (
-    <div>
+    <div >
       <Navbar />
       <HeroSection />
       <CategoryCarousel />
